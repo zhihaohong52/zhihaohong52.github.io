@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projects - Hong Zhi Hao (James)</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Hong Zhi Hao (James)">
+    <meta name="author" content="Hong Zhi Hao (James)">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+
+    <!-- Custom Navigation CSS -->
+    <style>
+        .navbar {
+            background: linear-gradient(135deg, #434E5E 0%, #58677c 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+            transform: translateY(-1px);
+        }
+        .navbar-nav .nav-link.active {
+            color: white !important;
+            font-weight: 700;
+        }
+        .navbar-toggler {
+            border: none;
+            color: white;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #434E5E 0%, #58677c 100%);
+            color: white;
+            padding: 4rem 0 2rem 0;
+            margin-bottom: 3rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #434E5E 0%, #58677c 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .project-title {
+            color: #434E5E;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .project-title:hover {
+            color: #58677c;
+        }
+        .tableau-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 2rem 0 1rem 0;
+            }
+            .display-4 {
+                font-size: 2rem;
+            }
+            .project-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+                border-radius: 10px;
+            }
+            .project-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .container-fluid {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Hong Zhi Hao (James)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="display-4 mb-3">My Projects</h1>
+            <p class="lead">Explore my technical projects and innovations</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container-fluid my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-11 col-lg-10 col-xl-8">
+
+                <!-- ESG Analytics Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="mb-3">
+                        <a href="https://github.com/XYinfg/esg_analytics" target="_blank" class="project-title">ESG Analytics</a>
+                    </h3>
+                    <p class="mb-4">Analysed ESG performance of energy companies worldwide help companies understand, predict, and improve their ESG performance using state-of-the-art machine learning techniques. 2 models are created, a Two Layer Model with 1 Random Forest Regressor layer and 1 OLS Linear Regression layer, and a Reinforcement Learning model using Q-learning to predict the ESG score of a company.</p>
+                    <p class="mb-4">Data is taken from Bloomberg, S&P and the United Nations. Project is done as part of the Business Analytics Consulting module in partnership with Aon.</p>
+                    <div>
+                        <h5 class="mb-3">Technologies used:</h5>
+                        <span class="badge bg-secondary me-2 mb-2">Python</span>
+                        <span class="badge bg-secondary me-2 mb-2">Pandas</span>
+                        <span class="badge bg-secondary me-2 mb-2">NumPy</span>
+                        <span class="badge bg-secondary me-2 mb-2">Scikit-learn</span>
+                        <span class="badge bg-secondary me-2 mb-2">Matplotlib</span>
+                        <span class="badge bg-secondary me-2 mb-2">Seaborn</span>
+                        <span class="badge bg-secondary me-2 mb-2">PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- AI Customer Support Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="mb-3">
+                        <a href="https://github.com/zhihaohong52/ai-customer-support" target="_blank" class="project-title">AI Customer Support</a>
+                    </h3>
+                    <p class="mb-4">An AI powered chatbot featuring a customer support, financial planner and stock market analyst assistants. It uses OpenAI and Gemini APIs to provide accurate and relevant responses to user queries, with a RAG approach to query a Milvus vector database for relevant information.</p>
+                    <p class="mb-4">The frontend is built with React, and the backend is built with Node.js and Firebase. You can access the app at <a href="https://ai-customer-support-woad.vercel.app/" target="_blank" class="text-decoration-none">ai-customer-support-woad.vercel.app</a>.</p>
+                    <div>
+                        <h5 class="mb-3">Technologies used:</h5>
+                        <span class="badge bg-secondary me-2 mb-2">React</span>
+                        <span class="badge bg-secondary me-2 mb-2">Node.js</span>
+                        <span class="badge bg-secondary me-2 mb-2">Firebase</span>
+                        <span class="badge bg-secondary me-2 mb-2">OpenAI API</span>
+                        <span class="badge bg-secondary me-2 mb-2">Google Gemini API</span>
+                        <span class="badge bg-secondary me-2 mb-2">HuggingFace API</span>
+                        <span class="badge bg-secondary me-2 mb-2">Milvus</span>
+                    </div>
+                </div>
+
+                <!-- PACE Chess Engine Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3 class="mb-3">
+                        <a href="https://github.com/zhihaohong52/Pace" target="_blank" class="project-title">PACE Chess Engine</a>
+                    </h3>
+                    <p class="mb-4">Pace (Predictive Alpha-beta Chess Engine) is a chess engine featuring alpha-beta with quiescene search (negamax) written in C. It supports both UCI and Xboard protocols and also features a console mode.</p>
+                    <div>
+                        <h5 class="mb-3">Technologies used:</h5>
+                        <span class="badge bg-secondary me-2 mb-2">C</span>
+                        <span class="badge bg-secondary me-2 mb-2">Doxygen</span>
+                    </div>
+                </div>
+
+                <!-- Camp Management System Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <h3 class="mb-3">
+                        <a href="https://github.com/zhihaohong52/Camp-Application-and-Management-System" target="_blank" class="project-title">Camp Application and Management System</a>
+                    </h3>
+                    <p class="mb-4">A Java-based application for managing camps for students in NTU. It features authentication, user management, camp management, and communications between students, camp committee members, and staff.</p>
+                    <div>
+                        <h5 class="mb-3">Technologies used:</h5>
+                        <span class="badge bg-secondary me-2 mb-2">Java</span>
+                        <span class="badge bg-secondary me-2 mb-2">Visual Paradigm</span>
+                    </div>
+                </div>
+
+                <!-- ParkBuddy Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="mb-3">
+                        <a href="https://github.com/NParkBuddies/testing" target="_blank" class="project-title">ParkBuddy</a>
+                    </h3>
+                    <p class="mb-4">A Flutter based application to view parks and their facilities in Singapore. Features review and rating system, and a facility booking management system on top of basic user profile controls</p>
+                    <p class="mb-4">I prototyped the app on Figma and created the backend Python Flask server, including setting up the API endpoints to connect to the frontend client instance. Connection is done over the internet using ngrok to tunnel from my computer acting as the server.</p>
+                    <div>
+                        <h5 class="mb-3">Technologies used:</h5>
+                        <span class="badge bg-secondary me-2 mb-2">Flutter</span>
+                        <span class="badge bg-secondary me-2 mb-2">Figma</span>
+                        <span class="badge bg-secondary me-2 mb-2">Python</span>
+                        <span class="badge bg-secondary me-2 mb-2">Flask</span>
+                        <span class="badge bg-secondary me-2 mb-2">SQL</span>
+                        <span class="badge bg-secondary me-2 mb-2">ngrok</span>
+                    </div>
+                </div>
+
+                <!-- US Treasury Yield Prediction Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="mb-3">
+                        <a href="https://public.tableau.com/views/USTreasurydashboard/USTreasury?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" target="_blank" class="project-title">US Treasury Yield Prediction</a>
+                    </h3>
+                    <p class="mb-4">
+                        Scrapped data from the US Department of Treasury and Monetary Authority of Singapore to get the yield curve data for the US and Singapore.
+                        Used Tableau to create an interactive dashboard to show the historical yield curve data and spread between the US and Singapore.
+                        Showcased interactive dashboard during a presentation during Management Accounting class.
+                    </p>
+                    <div class="mb-4">
+                        <h5 class="mb-3">Technologies used:</h5>
+                        <span class="badge bg-secondary me-2 mb-2">Tableau</span>
+                        <span class="badge bg-secondary me-2 mb-2">Python</span>
+                    </div>
+
+                    <!-- Tableau Dashboard -->
+                    <div class="tableau-container">
+                        <div class='tableauPlaceholder' id='viz1713389918073' style='position: relative'>
+                            <noscript>
+                                <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USTreasurydashboard&#47;USTreasury&#47;1_rss.png' style='border: none' /></a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='USTreasurydashboard&#47;USTreasury' />
+                                <param name='tabs' value='yes' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USTreasurydashboard&#47;USTreasury&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object>
+                        </div>
+                        <script type='text/javascript'>
+                            var divElement = document.getElementById('viz1713389918073');
+                            var vizElement = divElement.getElementsByTagName('object')[0];
+                            if ( divElement.offsetWidth > 800 ) {
+                                vizElement.style.minWidth='1600px';
+                                vizElement.style.maxWidth='100%';
+                                vizElement.style.minHeight='950px';
+                                vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+                            } else if ( divElement.offsetWidth > 500 ) {
+                                vizElement.style.minWidth='1600px';
+                                vizElement.style.maxWidth='100%';
+                                vizElement.style.minHeight='950px';
+                                vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+                            } else {
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='1150px';
+                                vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';
+                            }
+                            var scriptElement = document.createElement('script');
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center pt-5 pb-5 mt-5" style="background-color: #f8f9fa;">
+        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        <small>
+            <br>Template edited by Hong Zhi Hao (James) on 21st October 2025.
+        </small>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
