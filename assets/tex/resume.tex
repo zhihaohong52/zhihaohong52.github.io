@@ -1,0 +1,164 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=0.5in, top=0.4in, bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, hidelinks=false]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---- Formatting ----
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Section formatting — bold with rule (matches original)
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\vspace{-4pt}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% Subsection formatting (for job titles)
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{4pt}{0pt}
+
+% Compact lists
+\setlist[itemize]{nosep, leftmargin=1.2em, topsep=1pt, parsep=0pt}
+
+% ---- Commands ----
+\newcommand{\resumeHeading}[4]{%
+  \vspace{3pt}
+  \textbf{#1} \hfill \textit{#2} \\
+  \textbf{#3} \hfill \textit{#4}
+  \vspace{1pt}
+}
+
+\newcommand{\resumeSubheading}[2]{%
+  \vspace{1pt}
+  \textbf{#1} \hfill #2
+  \vspace{1pt}
+}
+
+\begin{document}
+
+% ---- Header ----
+\begin{center}
+  {\Large \textbf{HONG Zhi Hao}} \\[2pt]
+  \textbf{\href{mailto:zhihao.hong.52@gmail.com}{zhihao.hong.52@gmail.com} $|$ +65 88681416 $|$ \href{https://www.linkedin.com/in/zhihaohong52}{https://www.linkedin.com/in/zhihaohong52}}
+\end{center}
+
+% ---- Education ----
+\section{EDUCATION}
+
+\resumeHeading{Nanyang Technological University}{Aug 2021 -- May 2025}{Double Degree in Business and Computer Engineering}{}
+\begin{itemize}
+  \item Bachelor of Engineering (Computer Engineering) \textit{(Honours (Distinction))}
+  \item Bachelor of Business (specialization in Business Analytics) \textit{(Honours (Distinction))}
+  \item Selected Electives: Machine Learning, IoT -- Tiny Machine Learning, Business Analytics Consulting, AI in Accounting and Finance
+  \item ASEAN Undergraduate Scholar
+\end{itemize}
+
+\resumeSubheading{Final Year Project: Federated Learning for Edge Computing}{}
+\begin{itemize}
+  \item Researched, designed, and implemented a federated learning system for embedded devices and evaluated its scalability, resource efficiency, and privacy.
+\end{itemize}
+
+% ---- Work Experience ----
+\section{WORK EXPERIENCE}
+
+\resumeHeading{SeaMoney}{May 2024 -- Aug 2024}{Financial Product Management (Tech Compliance) Intern}{}
+\begin{itemize}
+  \item Led comprehensive gap assessments to ensure alignment with standards and regulations such as DPTM and ISO 27001, improving compliance and operational efficiency.
+  \item Analyzed multi-country requirements and contributed to the ISO 27001 manual, supporting cross-border compliance efforts.
+  \item Collaborated cross-functionally to align departments with regulatory standards.
+  \item Set up and managed team documentation on Confluence, enhancing communication and collaboration.
+\end{itemize}
+
+\resumeHeading{SunGreenH2}{Nov 2023 -- Jan 2024}{Business Development Intern}{}
+\begin{itemize}
+  \item Spearheaded comprehensive market research across EMEA, Americas, and APAC, identifying potential collaborators and competitors.
+  \item Automated sales reports on Excel, resulting in a 95\% reduction in time spent and improved accuracy.
+  \item Streamlined the company's CRM workflow by initiating automation on marketing and deals workflows on HubSpot.
+  \item Created a template for the company's monthly newsletter.
+\end{itemize}
+
+\resumeHeading{Azqore SA}{Oct 2022 -- Apr 2023}{Identity and Access Management (IAM) Intern}{}
+\begin{itemize}
+  \item Led a project to identify, classify and address uncorrelated accounts on SailPoint IdentityIQ, ensuring secure and accurate access for users from over 30 banks.
+  \item Utilized data analytics and created macros to automate tasks, providing documentation for the Switzerland team to replicate the process for EU-based banks.
+  \item Assisted in regular IAM tasks such as password resets and resolving login issues, while responding to tickets on JIRA.
+\end{itemize}
+
+\resumeHeading{KPMG Singapore}{May 2022 -- Aug 2022}{Digital Trust Intern}{}
+\begin{itemize}
+  \item Utilized data analytics for IT audits, achieving time savings of more than 97\% on Microsoft Excel.
+  \item Prepared work papers for general IT controls and IT automated controls after evaluating systems such as SAP and SuccessFactors with Singapore Exchange Limited.
+  \item Reviewed user access to databases such as Oracle and MSSQL, and operating systems such as Windows, Linux and AIX for Singapore Press Holdings.
+\end{itemize}
+
+\resumeHeading{NIPSEA Group I Nippon Paint Holdings (SG)}{Dec 2020 -- Jun 2021}{Finance Admin}{}
+\begin{itemize}
+  \item Assisted in closing a US\$12 billion merger with Nippon Paint Holdings (Japan) by compiling documents required for compliance across multiple Asian countries.
+  \item Conducted competitor research for CapEx and formulated Group CapEx guidelines.
+  \item Conducted market analysis of the automobile industry in Japan and Europe and participated in drafting business development strategies for these 2 markets.
+  \item Researched prevailing ESG strategies among market leaders and drafted group ESG strategy.
+  \item Assisted the finance team with the reconciliation of accounts for subsidiary companies.
+\end{itemize}
+
+% ---- Co-Curricular Activities ----
+\section{CO-CURRICULAR ACTIVITIES}
+
+\resumeHeading{NTU Product Club}{May 2024 -- April 2025}{Financial Controller}{}
+\begin{itemize}
+  \item Secured collaborations and managed budgets for events including workshops, hackathons, and company visits.
+  \item Spearheaded the launch of the club website, acting as Product Manager to align technical and user needs.
+\end{itemize}
+
+\resumeHeading{NTU Product Management Experience 2024}{Jan 2024 -- Mar 2024}{Participant}{}
+\begin{itemize}
+  \item Proposed an automated schedule optimiser for NTU's course planning tool to reduce the time taken from 2 hours to 2 minutes.
+  \item Awarded Judge's Choice at the internal product challenge.
+\end{itemize}
+
+\resumeHeading{Hall of Residence 5 Hall Council}{Sep 2021 -- Aug 2022}{Financial Controller}{}
+\begin{itemize}
+  \item Prepared a hall budget of about \$20,000 and handled asset management, liaising with various hall committees for budget preparation and annual audit.
+  \item Settled financial matters for all hall events and residents' welfare, negotiating with hall sponsors.
+  \item Worked closely with the Student Affairs Office's Finance team and handled all finance-related claims, contributing to the creation of a new accounts template for the hall.
+\end{itemize}
+
+% ---- Community Service ----
+\section{COMMUNITY SERVICE}
+
+\vspace{3pt}
+\textbf{SmileAsia Student Chapter National Exco} \\
+\textbf{President} \hfill \textit{Apr 2022 -- Mar 2023}
+\vspace{1pt}
+\begin{itemize}
+  \item Led team in planning and execution of the annual Asia Student Leadership Conference.
+  \item Supervised the planning and execution of the fundraising concert.
+\end{itemize}
+
+\textbf{Treasurer} \hfill \textit{Apr 2021 -- Mar 2022}
+\vspace{1pt}
+\begin{itemize}
+  \item Budgeted and handled logistics for the annual Asia Student Leadership Conference.
+  \item Communicated with school chapters for events organization and fundraising, and financial matters across chapters.
+\end{itemize}
+
+% ---- Awards and Achievements ----
+\section{AWARDS AND ACHIEVEMENTS}
+
+\begin{itemize}
+  \item \textbf{ASEAN Undergraduate Scholarship:} Received a full-ride scholarship throughout undergraduate studies at NTU.
+  \item \textbf{Singapore Business Case Competition 2023 Semi-Finalist:} Pitched a product to use AI for improving agriculture yields in Nigeria.
+  \item \textbf{NTU Port63 Challenge 2023 Finalist:} Pitched a two-pronged solution to reduce and commercialize food surplus in hotel buffets.
+  \item \textbf{Google Advanced Data Analytics, Business Intelligence and UX Design Professional Certificates:} Received NTU-Google Career Certificate Scholarship Program to obtain certificates.
+\end{itemize}
+
+% ---- Skills ----
+\section{SKILLS}
+
+\textit{Languages:} Fluent in English, Mandarin, Malay; Conversational in Japanese. \\
+\textit{Technical Skills:} Proficient in Python, C, C++, R, Java, SQL, Unix. Experienced in automation using Excel, HubSpot, and PowerBI. Skilled in data analytics and visualization with Tableau.
+
+\end{document}
