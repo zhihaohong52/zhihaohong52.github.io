@@ -99,7 +99,7 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 .resume-header {
 	background: $theme-color-primary;
 	color: rgba(256, 256, 256, 0.9);
-	height: 220px;
+	min-height: 220px;
 	.picture {
 		width: 220px;
 	}
