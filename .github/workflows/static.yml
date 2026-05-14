@@ -31,13 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Compile LaTeX resume to PDF
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: assets/tex/resume.tex
-          working_directory: .
-      - name: Move compiled PDF to assets
-        run: mv resume.pdf assets/files/resume.pdf
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
