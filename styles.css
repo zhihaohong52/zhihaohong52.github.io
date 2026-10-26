@@ -1,4 +1,6 @@
 /* Page layout for index.html. Reads only tokens from src/design/tokens.css; components come from bundle.css. */
+/* iOS Safari otherwise inflates the longest line in a block, like the terminal's third command */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 
 html{scroll-behavior:smooth;background:var(--surface)}
 body{margin:0}
@@ -206,6 +208,8 @@ pre.fragment{overflow-x:auto;line-height:1.55;white-space:pre}
 
 /* Terminal: lines print one after another, the cursor blinks at the end */
 .term__line{display:inline-block}
+/* Phones: wrap the long commands instead of cutting them off at the edge */
+@media (max-width:720px){pre.term{white-space:pre-wrap;overflow-wrap:anywhere}}
 .term.reveal:not(.in) .term__line{opacity:0}
 .term.in .term__line{animation:print .3s var(--ease) both}
 .term.in .term__line:nth-child(1){animation-delay:.2s}
