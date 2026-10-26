@@ -262,7 +262,7 @@ pre.fragment{overflow-x:auto;line-height:1.55;white-space:pre}
 .riding .rail i{transform:none}
 .riding .rail i:nth-child(1){transition-delay:.45s}.riding .rail i:nth-child(2){transition-delay:.51s}.riding .rail i:nth-child(3){transition-delay:.57s}.riding .rail i:nth-child(4){transition-delay:.63s}
 /* Only where the right gutter clears the content column */
-@media (min-width:1520px){.rail{display:flex}}
+@media (min-width:1420px){.rail{display:flex}}
 
 /* ---------- Navigation: a sticky bar, and on phones a 1970s supergraphic menu ---------- */
 .site-header{position:sticky;top:0;z-index:10}
