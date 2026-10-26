@@ -1,1 +1,6 @@
 probity.config.js
+.taste-skill/
+
+# Your global gitignore excludes sonata*; these screenshots are part of the site
+!assets/images/work/sonata-*
+.impeccable/hook.cache.json

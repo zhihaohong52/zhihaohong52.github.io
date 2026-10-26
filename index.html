@@ -1,247 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hong Zhi Hao (James) - Home</title>
-
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hong Zhi Hao (James) - Professional Portfolio">
-    <meta name="author" content="Hong Zhi Hao (James)">
-	<meta name="editor" content="Hong Zhi Hao (James)">
-	<meta name="last-updated" content="2025-10-21">
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-
-    <!-- FontAwesome JS-->
-	<script defer src="assets/fontawesome/js/all.min.js"></script>
-
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
-
-    <!-- Custom Navigation CSS -->
-    <style>
-        .navbar {
-            background: linear-gradient(135deg, #434E5E 0%, #58677c 100%);
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .navbar-brand {
-            color: white !important;
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-        .navbar-nav .nav-link {
-            color: rgba(255,255,255,0.9) !important;
-            font-weight: 500;
-            margin: 0 0.5rem;
-            transition: all 0.3s ease;
-        }
-        .navbar-nav .nav-link:hover {
-            color: white !important;
-            transform: translateY(-1px);
-        }
-        .navbar-nav .nav-link.active {
-            color: white !important;
-            font-weight: 700;
-        }
-        .navbar-toggler {
-            border: none;
-            color: white;
-        }
-        .navbar-toggler:focus {
-            box-shadow: none;
-        }
-    </style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James Hong — AI-native developer, Singapore</title>
+  <meta name="description" content="Hong Zhi Hao (James), AI-native developer in Singapore. I design agents, wire them to real data with MCP, and ship them end to end.">
+  <meta name="author" content="Hong Zhi Hao (James)">
+  <link rel="canonical" href="https://zhihaohong52.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zhihaohong52.github.io/">
+  <meta property="og:title" content="James Hong — AI-native developer, Singapore">
+  <meta property="og:description" content="I design agents, wire them to real data with MCP, and ship them end to end.">
+  <meta property="og:image" content="https://zhihaohong52.github.io/assets/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preload" href="src/design/fonts/URWGothic-Demi.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="src/design/fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="src/design/tokens.css?v=11">
+  <link rel="stylesheet" href="src/design/bundle.css?v=11">
+  <link rel="stylesheet" href="styles.css?v=11">
+  <script src="script.js?v=11" defer></script>
 </head>
+<body class="ptp-page">
+<a class="skip" href="#top">Skip to content</a>
 
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Hong Zhi Hao (James)</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experience.html">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="education.html">Education</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<div class="rail" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<header class="site-header">
+  <div class="ptp-container site-header__bar">
+    <nav class="ptp-nav" aria-label="Main">
+      <a class="ptp-nav__name" href="#top">James Hong</a>
+      <ul class="ptp-nav__links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__label">Menu</span>
+        <span class="lanes-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      </button>
     </nav>
+  </div>
+  <div id="menu" class="menu" inert>
+    <div class="menu__lanes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="ptp-container menu__body">
+      <nav aria-label="Menu">
+        <ul class="menu__links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="menu__contact">
+        <li><span class="ptp-mark icon-sm mark--mail" aria-hidden="true"></span><a href="mailto:zhihao.hong.52@gmail.com">zhihao.hong.52@gmail.com</a></li>
+        <li><span class="ptp-mark icon-sm mark--linkedin" aria-hidden="true"></span><a href="https://www.linkedin.com/in/zhihaohong52">LinkedIn</a></li>
+        <li><span class="ptp-mark icon-sm mark--github" aria-hidden="true"></span><a href="https://github.com/zhihaohong52">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-    <article class="resume-wrapper text-center position-relative">
-	    <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
-		    <header class="resume-header pt-4 pt-md-0">
-			    <div class="row">
-				    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
-				        <img class="picture" src="assets/images/profile.jpeg" alt="">
-				    </div><!--//col-->
-				    <div class="col">
-					    <div class="row p-4 justify-content-center justify-content-md-between">
-						    <div class="primary-info col-auto">
-							    <h1 class="name mt-0 mb-1 text-white text-uppercase">Hong Zhi Hao (James)</h1>
-							    <div class="title mb-3">People Tech Analyst at Advance Intelligence Group</div>
-							    <ul class="list-unstyled">
-								    <li class="mb-2"><a class="text-link" href="mailto:zhihao.hong.52@gmail.com"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>zhihao.hong.52@gmail.com</a></li>
-									<li class="mb-2"><a class="text-link" href="#"><i class="fas fa-map-marker-alt fa-fw me-2" data-fa-transform="grow-3"></i>Singapore</a></li>
-									<li class="mb-2"><a class="text-link" href="https://www.linkedin.com/in/zhihaohong52" target="_blank"><i class="fab fa-linkedin-in fa-fw me-2" data-fa-transform="grow-3"></i>linkedin.com/in/zhihaohong52</a></li>
-									<li class="mb-2"><a class="text-link" href="https://github.com/zhihaohong52" target="_blank"><i class="fab fa-github-alt fa-fw me-2" data-fa-transform="grow-3"></i>github.com/zhihaohong52</a></li>
-							    </ul>
-						    </div><!--//primary-info-->
-					    </div><!--//row-->
-				    </div><!--//col-->
-			    </div><!--//row-->
-		    </header>
-		    <div class="resume-body p-5">
-			    <section class="resume-section summary-section mb-5">
-				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Welcome</h2>
-				    <div class="resume-section-content">
-					    <p class="mb-4 justify-text">Welcome to my professional portfolio! I'm a graduate from Nanyang Technological University, with a double degree in Business and Computer Engineering, currently developing people tech solutions as a People Tech Analyst at Advance Intelligence. I'm passionate about bridging technology and business to create innovative solutions.</p>
-					    <p class="mb-4">With experience across financial services, business development, and IT consulting, I bring a unique perspective that combines technical expertise with business acumen. I'm particularly interested in AI, data analytics, and fintech solutions. Currently, I am exploring automation and large language models for human resource services.</p>
-					    <div class="text-center">
-					        <p class="mb-3">Feel free to reach out via <a href="mailto:zhihao.hong.52@gmail.com">email</a> or <a href="https://www.linkedin.com/in/zhihaohong52" target="_blank">LinkedIn</a>.</p>
-					        <a href="about.html" class="btn btn-outline-primary btn-lg mb-3">
-					            <i class="fas fa-user me-2"></i>Learn More About Me
-					        </a>
-					    </div>
-					</div>
-			    </section><!--//summary-section-->
+<main id="top">
 
-			    <!-- Quick Overview Cards -->
-			    <div class="row mb-5">
-			        <div class="col-md-6 col-lg-3 mb-4">
-			            <div class="card h-100 text-center border-0 shadow-sm">
-			                <div class="card-body">
-			                    <div class="mb-3">
-			                        <i class="fas fa-briefcase fa-3x text-primary"></i>
-			                    </div>
-			                    <h5 class="card-title">Experience</h5>
-			                    <p class="card-text">Work and internships across finance, tech, and consulting</p>
-			                    <a href="experience.html" class="btn btn-outline-primary btn-sm">View Details</a>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="col-md-6 col-lg-3 mb-4">
-			            <div class="card h-100 text-center border-0 shadow-sm">
-			                <div class="card-body">
-			                    <div class="mb-3">
-			                        <i class="fas fa-code fa-3x text-primary"></i>
-			                    </div>
-			                    <h5 class="card-title">Projects</h5>
-			                    <p class="card-text">AI, data analytics, and full-stack applications</p>
-			                    <a href="projects.html" class="btn btn-outline-primary btn-sm">View Projects</a>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="col-md-6 col-lg-3 mb-4">
-			            <div class="card h-100 text-center border-0 shadow-sm">
-			                <div class="card-body">
-			                    <div class="mb-3">
-			                        <i class="fas fa-graduation-cap fa-3x text-primary"></i>
-			                    </div>
-			                    <h5 class="card-title">Education</h5>
-			                    <p class="card-text">Double degree in Engineering & Business</p>
-			                    <a href="education.html" class="btn btn-outline-primary btn-sm">View Education</a>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="col-md-6 col-lg-3 mb-4">
-			            <div class="card h-100 text-center border-0 shadow-sm">
-			                <div class="card-body">
-			                    <div class="mb-3">
-			                        <i class="fas fa-trophy fa-3x text-primary"></i>
-			                    </div>
-			                    <h5 class="card-title">Awards</h5>
-			                    <p class="card-text">Scholarships and competition recognitions</p>
-			                    <a href="education.html#awards" class="btn btn-outline-primary btn-sm">View Awards</a>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
+  <section class="hero" aria-labelledby="hero-title">
+    <svg class="hero__bend" viewBox="0 0 2400 520" preserveAspectRatio="xMaxYMax slice" fill="none" stroke-width="18" aria-hidden="true">
+      <path class="ptp-lane-1" pathLength="1" d="M0 418 H2200 A92 92 0 0 0 2292 326 V-400"/>
+      <path class="ptp-lane-2" pathLength="1" d="M0 444 H2200 A118 118 0 0 0 2318 326 V-400"/>
+      <path class="ptp-lane-3" pathLength="1" d="M0 470 H2200 A144 144 0 0 0 2344 326 V-400"/>
+      <path class="ptp-lane-4" pathLength="1" d="M0 496 H2200 A170 170 0 0 0 2370 326 V-400"/>
+    </svg>
+    <div class="ptp-container hero__text">
+      <h1 id="hero-title" class="ptp-display hero__title"><span class="line"><span>From prompt</span></span><br><span class="line"><span>to production.</span></span></h1>
+      <p class="ptp-lead hero__lead">I’m James Hong, an AI-native developer in Singapore. I design agents, wire them to real data with MCP, and ship them end to end.</p>
+      <div class="hero__actions">
+        <a class="ptp-button ptp-button--primary" href="#work">See the work</a>
+        <a class="ptp-button ptp-button--secondary" href="#contact">Get in touch</a>
+      </div>
+      <ul class="hero__contact">
+        <li><span class="ptp-mark icon-sm mark--mail" aria-hidden="true"></span><a href="mailto:zhihao.hong.52@gmail.com">zhihao.hong.52@gmail.com</a></li>
+        <li><span class="ptp-mark icon-sm mark--location" aria-hidden="true"></span>Singapore</li>
+        <li><span class="ptp-mark icon-sm mark--linkedin" aria-hidden="true"></span><a href="https://www.linkedin.com/in/zhihaohong52">linkedin.com/in/zhihaohong52</a></li>
+        <li><span class="ptp-mark icon-sm mark--github" aria-hidden="true"></span><a href="https://github.com/zhihaohong52">github.com/zhihaohong52</a></li>
+      </ul>
+    </div>
+    <div class="ptp-stripes hero__flat" role="presentation"><span></span><span></span><span></span><span></span></div>
+  </section>
 
-			    <!-- Recent Highlights -->
-			    <section class="resume-section mb-5">
-			        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Recent Highlights</h2>
-			        <div class="row">
-			            <div class="col-lg-6 mb-4">
-			                <div class="card border-0 shadow-sm h-100">
-			                    <div class="card-body">
-			                        <h5 class="card-title text-primary mb-3">
-			                            <i class="fas fa-person me-2"></i>People Tech Analyst at Advance Intelligence Group
-			                        </h5>
-			                        <p class="card-text">Explored various automation and AI in supplmenting human resources services, improving accuracy and reducing manual workload for different teams.</p>
-			                        <small class="text-muted">Nov 2025 - present</small>
-			                    </div>
-			                </div>
-			            </div>
-			            <div class="col-lg-6 mb-4">
-			                <div class="card border-0 shadow-sm h-100">
-			                    <div class="card-body">
-			                        <h5 class="card-title text-primary mb-3">
-			                            <i class="fas fa-robot me-2"></i>AI Customer Support Platform
-			                        </h5>
-			                        <p class="card-text">Built an AI-powered chatbot with financial planning and stock analysis capabilities using OpenAI, Gemini, and vector databases.</p>
-			                        <a href="https://ai-customer-support-woad.vercel.app/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
-			                            <i class="fas fa-external-link-alt me-1"></i>View Live Demo
-			                        </a>
-			                    </div>
-			                </div>
-			            </div>
-			        </div>
-			    </section>
+  <section class="section section--raised skills-band" aria-label="What I do">
+    <div class="ptp-container">
+        <ul class="skills">
+          <li>
+            <div class="ptp-skill"><div class="ptp-mark mark--clawd"></div><div><span class="ptp-skill__name">Agentic engineering</span><span class="ptp-skill__line">Orchestrating coding agents</span></div></div>
+            <p>Sonata and Cassette, below.</p>
+          </li>
+          <li>
+            <div class="ptp-skill"><div class="ptp-mark mark--space-shuttle"></div><div><span class="ptp-skill__name">Shipping 0 to 1</span><span class="ptp-skill__line">3 apps, end to end</span></div></div>
+            <p>Each one below, from first commit to release.</p>
+          </li>
+          <li>
+            <div class="ptp-skill"><div class="ptp-mark mark--mcp"></div><div><span class="ptp-skill__name">MCP design</span><span class="ptp-skill__line">Agents read and act on real data</span></div></div>
+            <p>A text-to-SQL MCP server over company data.</p>
+          </li>
+          <li>
+            <div class="ptp-skill"><div class="ptp-mark mark--typesafe"></div><div><span class="ptp-skill__name">Decision models</span><span class="ptp-skill__line">Smart if-statements, Jev-style</span></div></div>
+            <p>Automated assessments by answering policy questions as yes or no, instead of RAG.</p>
+          </li>
+        </ul>
+    </div>
+  </section>
 
-			    <!-- Call to Action -->
-			    <section class="resume-section">
-			        <div class="text-center p-4" style="background: linear-gradient(135deg, #434E5E 0%, #58677c 100%); border-radius: 15px; color: white;">
-			            <h3 class="mb-3">Let's Connect!</h3>
-			            <p class="mb-4">I'm always open to discussing opportunities, collaborations, or just having a chat about technology and innovation.</p>
-			            <div class="d-flex justify-content-center gap-3 flex-wrap">
-			                <a href="mailto:zhihao.hong.52@gmail.com" class="btn btn-light">
-			                    <i class="fas fa-envelope me-2"></i>Send Email
-			                </a>
-			                <a href="https://www.linkedin.com/in/zhihaohong52" target="_blank" class="btn btn-outline-light">
-			                    <i class="fab fa-linkedin me-2"></i>LinkedIn
-			                </a>
-			                <a href="https://github.com/zhihaohong52" target="_blank" class="btn btn-outline-light">
-			                    <i class="fab fa-github me-2"></i>GitHub
-			                </a>
-			            </div>
-			        </div>
-			    </section>
-		    </div><!--//resume-body-->
-	    </div>
-    </article>
+  <section id="work" class="section" aria-labelledby="work-title">
+    <div class="ptp-container">
+      <h2 id="work-title" class="ptp-h1 section__title">Selected work</h2>
 
-    <footer class="footer text-center pt-2 pb-5">
-        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-		<small>
-			<br>Template edited by Hong Zhi Hao (James) on 21st October 2025.
-		</small>
-	</footer>
+      <article class="project project--lead">
+        <div class="project__text">
+          <h3 class="ptp-h2">Sonata</h3>
+          <p class="project__line">Foreign-model subagents for Claude Code.</p>
+          <p>Claude Code’s subagents always run on Claude. Sonata gives it subagents that run on GPT, DeepSeek, GLM, Kimi or any model you can reach, called through the ordinary Agent tool with the same tools and permission modes.</p>
+          <p>A local router ranks models per tier and falls back to the next one when a model fails. Open source on npm, in public beta.</p>
+          <div class="ptp-card__meta"><span class="ptp-tag">TypeScript</span><span class="ptp-tag">npm</span><span class="ptp-tag">Claude Code</span></div>
+          <p class="project__links">
+            <a class="ptp-link" href="https://zhihaohong52.github.io/sonata/">Read the docs</a>
+            <a class="ptp-link" href="https://github.com/zhihaohong52/sonata">See the code</a>
+          </p>
+        </div>
+        <figure class="project__media project__media--stack">
+          <img src="assets/images/work/sonata-site.webp" width="1280" height="800" loading="lazy" alt="The Sonata documentation site: “Foreign-model subagents for Claude Code” with Get started and View on GitHub buttons.">
+          <img src="assets/images/work/sonata-tiers.webp" width="880" height="240" alt="Sonata’s terminal view ranking 66 models for the code-complex tier, top six shown with intelligence and cost per task." loading="lazy">
+          <figcaption class="ptp-small">The docs site, and the tier ranking in <code>sonata agents</code>.</figcaption>
+        </figure>
+      </article>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <article class="project">
+        <div class="project__text">
+          <h3 class="ptp-h2">Cassette</h3>
+          <p class="project__line">Record a workflow once. Replay it cheaply.</p>
+          <p>Programming by demonstration for coding agents. You show a workflow once; Cassette writes a tape that replays deterministically and only calls an LLM for judgement steps or when something breaks, then writes the fix back into the tape.</p>
+          <div class="ptp-card__meta"><span class="ptp-tag">Python</span><span class="ptp-tag">Agents</span></div>
+          <p class="project__links"><a class="ptp-link" href="https://github.com/zhihaohong52/cassette">See the code</a></p>
+        </div>
+        <div class="project__media">
+<pre class="fragment term ptp-code" data-ui aria-label="Cassette quickstart commands"><code><span class="term__line cm"># replay the bundled tape, no LLM involved</span>
+<span class="term__line">$ <span class="kw">cassette</span> validate examples/system-checks</span>
+<span class="term__line">$ <span class="kw">cassette</span> run examples/system-checks --param who=<span class="str">Ada</span></span>
+<span class="term__line fragment__dim">  each step: deterministic</span>
+<span class="term__line fragment__dim">  escalations: 0<span class="term__cursor" aria-hidden="true"></span></span></code></pre>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__text">
+          <h3 class="ptp-h2">AI Customer Support</h3>
+          <p class="project__line">A RAG assistant for support, planning and markets.</p>
+          <p>Three assistants in one app: customer support, a financial planner and a stock analyst. OpenAI and Gemini answer with context retrieved from a Milvus vector database. React on the front, Node.js and Firebase behind.</p>
+          <div class="ptp-card__meta"><span class="ptp-tag">React</span><span class="ptp-tag">Node.js</span><span class="ptp-tag">RAG</span></div>
+          <p class="project__links">
+            <a class="ptp-link" href="https://ai-customer-support-woad.vercel.app">Try the live app</a>
+            <a class="ptp-link" href="https://github.com/zhihaohong52/ai-customer-support">See the code</a>
+          </p>
+        </div>
+        <div class="project__media">
+          <ol class="fragment fragment--flow" data-ui aria-label="How a question flows through the app">
+            <li><strong>React</strong> chat client</li>
+            <li><strong>Node.js + Firebase</strong> auth and sessions</li>
+            <li><strong>Milvus</strong> retrieves matching documents</li>
+            <li><strong>OpenAI / Gemini</strong> answer with that context</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__text">
+          <h3 class="ptp-h2">Federated learning on a microcontroller</h3>
+          <p class="project__line">My final-year project: a model that trains on a chip with 64 KB of RAM.</p>
+          <p>Federated learning keeps data on the device and sends only model updates. Flower, PySyft and TensorFlow Federated are too heavy for a board with no operating system, so I wrote my own C++ client: 457.5 kB, against 401.2 MB for the Python one.</p>
+          <p>It trains a small CNN on MNIST one sample at a time on an Arduino Nano 33 BLE Sense, with in-place layers and a 20-byte chunked serial protocol for FedAvg rounds with a Python server. NTU, 2025.</p>
+          <div class="ptp-card__meta"><span class="ptp-tag">C++</span><span class="ptp-tag">Arduino</span><span class="ptp-tag">Federated learning</span></div>
+        </div>
+        <figure class="project__media project__media--stack">
+          <img src="assets/images/work/fyp-arduino.webp" width="1280" height="800" loading="lazy" alt="An Arduino Nano on a breadboard, plugged into a laptop whose terminal logs each training sample and its loss.">
+          <div class="fragment results" data-ui>
+            <p class="results__title">Choosing the model: MNIST accuracy after 50 simulated rounds</p>
+            <dl class="bars">
+              <div><dt>CNN</dt><dd><span style="--v:96.65%"></span>96.7%</dd></div>
+              <div><dt>ANN</dt><dd><span style="--v:96.27%"></span>96.3%</dd></div>
+              <div><dt>MobileNet</dt><dd><span style="--v:85.88%"></span>85.9%</dd></div>
+            </dl>
+            <p class="results__title">On the Arduino: the CNN’s test accuracy per epoch</p>
+            <svg class="results__line" viewBox="0 0 600 185" role="img" aria-label="Test accuracy on the Arduino rises from 67% at epoch 1 to a peak of 79% at epoch 8, ending at 77% after 10 epochs.">
+              <path class="results__grid" d="M80 140H580M80 100H580M80 60H580M80 20H580"/>
+              <polyline points="80,124 136,84 191,52 247,68 302,60 358,44 413,36 469,28 524,36 580,44"/>
+              <text x="70" y="133" text-anchor="end">67%</text>
+              <text x="469" y="14" text-anchor="middle">79%</text>
+              <text x="80" y="180" text-anchor="start">Epoch 1</text>
+              <text x="580" y="180" text-anchor="end">10</text>
+            </svg>
+          </div>
+          <figcaption class="ptp-small">The prototype trains over USB serial while the server logs each sample’s loss. The CNN won on accuracy and convergence, and is smaller than the ANN.</figcaption>
+        </figure>
+      </article>
+
+      <div class="earlier">
+        <h3 class="ptp-h2">Earlier projects</h3>
+        <ul class="earlier__list">
+          <li><a class="ptp-link" href="https://github.com/zhihaohong52/Pace">PACE chess engine</a><span>Alpha-beta search with quiescence, in C. UCI and Xboard.</span></li>
+          <li><a class="ptp-link" href="https://github.com/XYinfg/esg_analytics">ESG analytics</a><span>Random forest and Q-learning models of ESG scores, with Aon.</span></li>
+          <li><a class="ptp-link" href="https://github.com/NParkBuddies/testing">ParkBuddy</a><span>Flutter app for Singapore’s parks; I built the Flask backend.</span></li>
+          <li><a class="ptp-link" href="https://github.com/zhihaohong52/Camp-Application-and-Management-System">Camp management</a><span>Java system for NTU camps: roles, sign-ups, messaging.</span></li>
+          <li><a class="ptp-link" href="https://public.tableau.com/views/USTreasurydashboard/USTreasury?:language=en-US">Treasury yield dashboard</a><span>US and Singapore yield curves, scraped and charted in Tableau.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="experience" class="section section--raised" aria-labelledby="experience-title">
+    <div class="ptp-container">
+      <h2 id="experience-title" class="ptp-h1 section__title">Experience</h2>
+      <ol class="roles">
+        <li class="role">
+          <p class="role__when ptp-small">Nov 2025 – now</p>
+          <div>
+            <h3 class="ptp-h2">People Tech Analyst</h3>
+            <p class="role__where">Advance Intelligence Group</p>
+            <p>Moved automation scripts from cron to Apache Airflow, with a bot that reports failures. Built an MCP server that answers natural-language questions with SQL. Led Python and Lark Base tools end to end, from user research and PRD to UAT.</p>
+          </div>
+        </li>
+        <li class="role">
+          <p class="role__when ptp-small">May – Aug 2024</p>
+          <div>
+            <h3 class="ptp-h2">Product management intern</h3>
+            <p class="role__where">SeaMoney, financial services</p>
+            <p>Ran gap assessments against DPTM and ISO 27001, contributed to the multi-country ISO 27001 manual, and set up the team’s Confluence.</p>
+          </div>
+        </li>
+      </ol>
+      <div id="education" class="edu">
+        <div class="edu__group"><h3 class="ptp-h2">Earlier roles</h3>
+        <ul class="facts">
+          <li><strong>Business development intern</strong><span>SungreenH2, 2023–2024</span></li>
+          <li><strong>Identity and access intern</strong><span>Azqore SA, 2022–2023</span></li>
+          <li><strong>Digital trust intern</strong><span>KPMG, 2022</span></li>
+          <li><strong>Finance administrator</strong><span>Nippon Paint, 2020–2021</span></li>
+        </ul>
+        </div>
+        <div class="edu__group"><h3 class="ptp-h2">Education</h3>
+        <ul class="facts">
+          <li><strong>BEng Computer Engineering and BBus Business</strong><span>Nanyang Technological University, 2021–2025, on a full ASEAN Undergraduate Scholarship</span></li>
+        </ul>
+        </div>
+        <div class="edu__group"><h3 class="ptp-h2">Recognition</h3>
+        <ul class="facts">
+          <li><strong>NTU Product Club, Judge’s Choice</strong><span>A schedule optimiser that cut course planning from 2 hours to 2 minutes</span></li>
+          <li><strong>Singapore Business Case Competition 2023</strong><span>Semi-finalist: AI for crop yields in Nigeria</span></li>
+          <li><strong>NTU Port63 Challenge 2023</strong><span>Finalist: cutting and reselling hotel buffet surplus</span></li>
+        </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="ptp-container about">
+      <div class="about__story">
+        <h2 id="about-title" class="ptp-h1 section__title">About</h2>
+        <p>I’m Hong Zhi Hao, James to most people. I graduated from Nanyang Technological University in 2025 with a double degree in computer engineering and business.</p>
+        <p>I build with coding agents every day, and I build tools for building with them. Sonata lets Claude Code hand work to other models; Cassette replays a workflow without paying an LLM for every step.</p>
+        <p>At Advance Intelligence Group I put the same habits to work on internal tools: Airflow pipelines, Lark automations and an MCP server over real data.</p>
+        <p>Outside work I volunteer for access to healthcare and education.</p>
+      </div>
+      <img class="about__portrait" src="assets/images/profile.webp" width="560" height="560" alt="Portrait of James Hong." loading="lazy">
+    </div>
+  </section>
+
+  <section id="contact" class="section section--raised contact" aria-labelledby="contact-title">
+    <div class="ptp-container">
+      <h2 id="contact-title" class="ptp-display contact__title">Let’s build<br>something.</h2>
+      <p class="ptp-lead contact__lead">Open to roles, collaborations and a good conversation about agents.</p>
+      <p class="contact__email"><a class="ptp-link" href="mailto:zhihao.hong.52@gmail.com">zhihao.hong.52@gmail.com</a></p>
+      <div class="contact__actions">
+        <a class="ptp-button ptp-button--primary" href="mailto:zhihao.hong.52@gmail.com?subject=Hello%20James"><span class="ptp-mark icon-sm mark--mail" aria-hidden="true"></span>Send an email</a>
+        <a class="ptp-button ptp-button--secondary" href="https://www.linkedin.com/in/zhihaohong52"><span class="ptp-mark icon-sm mark--linkedin" aria-hidden="true"></span>Connect on LinkedIn</a>
+        <a class="ptp-button ptp-button--secondary" href="https://github.com/zhihaohong52"><span class="ptp-mark icon-sm mark--github" aria-hidden="true"></span>See my GitHub</a>
+        <a class="ptp-button ptp-button--secondary" href="assets/files/Hong%20Zhi%20Hao%20resume.pdf"><span class="ptp-mark icon-sm mark--resume" aria-hidden="true"></span>Download résumé</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="ptp-stripes" role="presentation"><span></span><span></span><span></span><span></span></div>
+  <div class="ptp-container site-footer__inner">
+    <p class="site-footer__name">James Hong</p>
+    <p class="ptp-small">AI-native developer, Singapore. © 2026</p>
+  </div>
+</footer>
 
 </body>
 </html>

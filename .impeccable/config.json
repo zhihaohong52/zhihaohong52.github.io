@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-26T03:49:03.779Z",
+        "reason": "Design system Prompt to Production: Day surface #f3ece1 is the brand's own token (tokens.json); README says every component works in Night and Day"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-26T10:20:57.532Z",
+        "reason": "Static scan can't see .section/.ptp-container padding in styles.css; the rendered scan of the page reports 0 findings"
+      }
+    ]
+  }
+}

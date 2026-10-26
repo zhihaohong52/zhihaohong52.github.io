@@ -1,0 +1,120 @@
+/* Prompt to Production — design tokens, generated from the design system's tokens.json (v3), plus --ease from the README motion rule.
+   Night is the default; Day applies under prefers-color-scheme: light or [data-theme="day"].
+   [data-theme="night"] forces Night regardless of the OS setting. Load before bundle.css. */
+
+@font-face{font-family:"URW Gothic";src:url("fonts/URWGothic-Book.woff2") format("woff2"),url("fonts/URWGothic-Book.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"URW Gothic";src:url("fonts/URWGothic-Demi.woff2") format("woff2"),url("fonts/URWGothic-Demi.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url("fonts/Jost-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url("fonts/Jost-Italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Jost";src:url("fonts/Jost-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  color-scheme:dark;
+
+  /* Colour — Night */
+  --surface:#15120f;
+  --surface-raised:#211c18;
+  --ink:#f1eadf;
+  --ink-soft:#b9b0a3;
+  --accent:#f39a2b;
+  --accent-ink:#15120f;
+  --field-border:#7d7266;
+  --focus:#f6c445;
+  --surface-sunken:#0d0b09;
+  --ink-faint:#948a7c;
+  --counter:#5fb3aa;  /* the one cool colour: second series, code keywords, topic tags; under a tenth of a screen */
+  --success:#a9b665;
+  --warning:#e0a83e;
+  --error:#f07178;
+
+  /* Stripes — identical in both themes, stripes only */
+  --stripe-yellow:#f6c445;
+  --stripe-amber:#f39a2b;
+  --stripe-orange:#e8592a;
+  --stripe-red:#c8302c;
+
+  /* Type */
+  --font-display:"URW Gothic","ITC Avant Garde Gothic","Century Gothic",Futura,sans-serif;
+  --font-text:Jost,Futura,"Century Gothic",system-ui,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  --display-xl:96px;  /* line-height .92, 600, -0.025em, uppercase; display-lg under 720px */
+  --display-lg:64px;  /* line-height .95, 600, -0.02em, uppercase */
+  --heading-1:40px;   /* line-height 1.05, 600, -0.015em */
+  --heading-2:27px;   /* line-height 1.1, 600, -0.01em */
+  --label:15px;       /* line-height 1.2, 600, 0.04em, uppercase */
+  --lead:22px;        /* line-height 1.45, 400 */
+  --body:18px;        /* line-height 1.6, 400 */
+  --small:15px;       /* line-height 1.5, 400 */
+  --code:15px;        /* line-height 1.55, 400 */
+
+  /* Spacing */
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:16px;
+  --space-4:24px;
+  --space-5:32px;
+  --space-6:48px;
+  --space-7:96px;  /* 64px on phones */
+  --space-8:160px;
+
+  /* Radius */
+  --radius-none:0px;
+  --radius-pill:999px;
+  --bend-1:92px;
+  --bend-2:118px;
+  --bend-3:144px;
+  --bend-4:170px;
+
+  /* Stripe geometry (hero/banner scale; divider is 10px lanes, 16px pitch) */
+  --stripe-width:18px;
+  --stripe-pitch:26px;
+
+  /* Layout */
+  --content-width:1120px;
+  --measure:68ch;
+  --mark-size:48px;  /* 64px on the banner */
+  --nav-height:72px;
+
+  /* Motion: one curve for every transition and animation */
+  --ease:cubic-bezier(.42,0,.58,1);
+}
+
+@media (max-width:640px){:root{--space-7:64px}}
+
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="night"]){
+    color-scheme:light;
+    --surface:#f3ece1;
+    --surface-raised:#e8dfd0;
+    --ink:#15120f;
+    --ink-soft:#5a5248;
+    --accent:#a8401a;
+    --accent-ink:#f3ece1;
+    --field-border:#7f7362;
+    --focus:#15120f;
+    --surface-sunken:#e2d8c7;
+    --ink-faint:#655c51;
+    --counter:#22605b;
+    --success:#475412;
+    --warning:#6f4800;
+    --error:#a3182e;
+  }
+}
+
+:root[data-theme="day"]{
+  color-scheme:light;
+  --surface:#f3ece1;
+  --surface-raised:#e8dfd0;
+  --ink:#15120f;
+  --ink-soft:#5a5248;
+  --accent:#a8401a;
+  --accent-ink:#f3ece1;
+  --field-border:#7f7362;
+  --focus:#15120f;
+  --surface-sunken:#e2d8c7;
+  --ink-faint:#655c51;
+  --counter:#22605b;
+  --success:#475412;
+  --warning:#6f4800;
+  --error:#a3182e;
+}

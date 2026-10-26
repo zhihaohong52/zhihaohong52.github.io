@@ -1,0 +1,82 @@
+/* Prompt to Production — component styles. Load after tokens.css. All values come from tokens. */
+
+.ptp-page{background:var(--surface);color:var(--ink);font-family:var(--font-text);font-size:18px;line-height:1.6}
+.ptp-container{max-width:var(--content-width);margin-inline:auto;padding-inline:var(--space-5)}
+@media (max-width:640px){.ptp-container{padding-inline:var(--space-3)}}
+
+/* Type helpers */
+.ptp-display{font-family:var(--font-display);font-weight:600;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;margin:0;text-wrap:balance}
+.ptp-h1{font-family:var(--font-display);font-weight:600;font-size:40px;line-height:1.05;letter-spacing:-.015em;margin:0}
+.ptp-h2{font-family:var(--font-display);font-weight:600;font-size:27px;line-height:1.1;letter-spacing:-.01em;margin:0}
+.ptp-lead{font-size:22px;line-height:1.45;color:var(--ink-soft);max-width:var(--measure);margin:0}
+.ptp-small{font-size:15px;line-height:1.5;color:var(--ink-soft)}
+.ptp-label{font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+
+/* Links */
+.ptp-link{color:var(--accent);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.ptp-link:hover{text-decoration-thickness:3px}
+
+/* Buttons: square, flat, one fill */
+.ptp-button{display:inline-flex;align-items:center;gap:var(--space-2);min-height:48px;padding:0 var(--space-4);border:2px solid transparent;border-radius:var(--radius-none);font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .12s cubic-bezier(.42,0,.58,1)}
+.ptp-button--primary{background:var(--accent);color:var(--accent-ink)}
+.ptp-button--secondary{background:transparent;color:var(--ink);border-color:var(--field-border)}
+.ptp-button:hover{transform:translateY(-1px)}
+.ptp-button:active{transform:translateY(1px)}
+.ptp-button:focus-visible,.ptp-link:focus-visible,.ptp-nav a:focus-visible,.ptp-card:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+
+/* Tags */
+.ptp-tag{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:var(--radius-pill);background:var(--surface-raised);color:var(--ink);font-family:var(--font-display);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+
+/* Marks: logos and icons used as masks so they take ink */
+.ptp-mark{width:var(--mark-size);height:var(--mark-size);flex:none;background:var(--ink);-webkit-mask:var(--mark) center/contain no-repeat;mask:var(--mark) center/contain no-repeat}
+
+/* Skill / showcase item */
+.ptp-skill{display:flex;align-items:center;gap:var(--space-3)}
+.ptp-skill__name{display:block;font-family:var(--font-display);font-weight:600;font-size:27px;line-height:1.1;letter-spacing:-.01em}
+.ptp-skill__line{display:block;font-size:15px;line-height:1.5;color:var(--ink-soft);margin-top:2px}
+
+/* Navigation */
+.ptp-nav{display:flex;align-items:center;justify-content:space-between;height:var(--nav-height);gap:var(--space-4)}
+.ptp-nav__name{font-family:var(--font-display);font-weight:600;font-size:20px;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+.ptp-nav__links{display:flex;gap:var(--space-5);list-style:none;margin:0;padding:0}
+.ptp-nav__links a{font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.ptp-nav__links a[aria-current="page"]{color:var(--accent)}
+
+/* Project card: tone step, square, no border or shadow */
+.ptp-card{display:grid;gap:var(--space-3);padding:var(--space-4);background:var(--surface-raised);color:var(--ink);text-decoration:none}
+.ptp-card__meta{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+
+/* Stripes: four lanes, always in order */
+.ptp-stripes{display:grid;gap:6px}
+.ptp-stripes span{display:block;height:10px}
+.ptp-stripes span:nth-child(1){background:var(--stripe-yellow)}
+.ptp-stripes span:nth-child(2){background:var(--stripe-amber)}
+.ptp-stripes span:nth-child(3){background:var(--stripe-orange)}
+.ptp-stripes span:nth-child(4){background:var(--stripe-red)}
+.ptp-lane-1{stroke:var(--stripe-yellow)}.ptp-lane-2{stroke:var(--stripe-amber)}.ptp-lane-3{stroke:var(--stripe-orange)}.ptp-lane-4{stroke:var(--stripe-red)}
+
+@media (prefers-reduced-motion:reduce){.ptp-button{transition:none}.ptp-button:hover,.ptp-button:active{transform:none}}
+
+/* Status messages: colour + word + icon, never colour alone */
+.ptp-status{display:flex;gap:var(--space-2);align-items:baseline;padding:var(--space-3) var(--space-4);background:var(--surface-raised);font-size:15px;line-height:1.5}
+.ptp-status__label{font-family:var(--font-display);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.ptp-status--success .ptp-status__label{color:var(--success)}
+.ptp-status--warning .ptp-status__label{color:var(--warning)}
+.ptp-status--error .ptp-status__label{color:var(--error)}
+
+/* Code */
+.ptp-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:15px;line-height:1.55;background:var(--surface-sunken);color:var(--ink);padding:var(--space-4);overflow-x:auto}
+.ptp-code .kw{color:var(--counter)}
+.ptp-code .str{color:var(--success)}
+.ptp-code .cm{color:var(--ink-faint)}
+
+/* Fields */
+.ptp-field{display:grid;gap:var(--space-2)}
+.ptp-field input{font:inherit;min-height:48px;padding:0 var(--space-3);background:var(--surface-sunken);color:var(--ink);border:2px solid var(--field-border);border-radius:var(--radius-none)}
+.ptp-field input::placeholder{color:var(--ink-faint)}
+.ptp-field input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.ptp-field input[aria-invalid="true"]{border-color:var(--error)}
+.ptp-field__error{color:var(--error);font-size:15px}
+
+/* Counter-colour tag */
+.ptp-tag--counter{color:var(--counter)}
